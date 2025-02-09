@@ -25,22 +25,19 @@ TEST_F(GameTest, PlayerSwitchTest) {
 }
 
 TEST_F(GameTest, WinConditionsTest) {
-    EXPECT_TRUE(game->winConditions(
-    {
+    EXPECT_TRUE(game->winConditions({
         {' ',' ',' '},
         {'X','X','X'},
         {' ',' ',' '}
     }
     ));
-    EXPECT_TRUE(game->winConditions(
-        {
+    EXPECT_TRUE(game->winConditions({
         {'X',' ',' '},
         {'X',' ',' '},
         {'X',' ',' '}
     }
 ));
-    EXPECT_TRUE(game->winConditions(
-        {
+    EXPECT_TRUE(game->winConditions({
         {'X',' ',' '},
         {' ','X',' '},
         {' ',' ','X'}
@@ -49,8 +46,7 @@ TEST_F(GameTest, WinConditionsTest) {
 }
 
 TEST_F(GameTest, DrawGameTest) {
-    EXPECT_TRUE(game->winConditions(
-        {
+    EXPECT_TRUE(game->winConditions({
         {'X','X','O'},
         {'O','O','X'},
         {'X','O','X'}
@@ -59,14 +55,12 @@ TEST_F(GameTest, DrawGameTest) {
 }
 
 TEST_F(GameTest, ValidMoveTest) {
-    EXPECT_FALSE(game->isValideMove(
-        {
+    EXPECT_FALSE(game->isValideMove({
         {'X',' ',' '},
         {' ',' ',' '},
         {' ',' ',' '}
     }, (0, 0, 'O')));
-    EXPECT_TRUE(game->isValideMove(
-        {
+    EXPECT_TRUE(game->isValideMove({
         {'X',' ',' '},
         {' ',' ',' '},
         {' ',' ',' '}
@@ -74,8 +68,7 @@ TEST_F(GameTest, ValidMoveTest) {
 }
 
 TEST_F(GameTest, InvalidMoveTest) {
-    EXPECT_FALSE(game->isValideMove(
-        {
+    EXPECT_FALSE(game->isValideMove({
         {' ',' ',' '},
         {' ',' ',' '},
         {' ',' ',' '}
