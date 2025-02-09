@@ -1,2 +1,2 @@
-# morpionscpp
-Jeu du Morpions en CPP dans un but d'apprentissage.
+# Morpion CPP
+Jeu du Morpions en CPP dans un but d'apprentissage. Le jeu va être dans le terminal.
