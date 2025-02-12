@@ -16,12 +16,12 @@ add_executable(Morpions
     src/main.cpp
         include/board.h
         src/board.cpp
-        src/rule.cpp
+        src/rules.cpp
         src/game.cpp
         src/player.cpp
         include/game.h
         include/player.h
-        include/rule.h
+        include/rules.h
 )
 
 enable_testing()
