@@ -38,6 +38,9 @@ bool isValidMove(std::vector<std::vector<char>> win, int row, int col) {
     if (win[row][col] == ' ') {
         return true;
     }
+    if (row < 0 || row >= 3 || col < 0 || col >= 3) {
+        return false;
+    }
     return false;
 }
 

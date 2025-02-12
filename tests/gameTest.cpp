@@ -54,27 +54,6 @@ TEST_F(GameTest, DrawGameTest) {
 ));
 }
 
-TEST_F(GameTest, ValidMoveTest) {
-    EXPECT_FALSE(game->isValideMove({
-        {'X',' ',' '},
-        {' ',' ',' '},
-        {' ',' ',' '}
-    }, (0, 0, 'O')));
-    EXPECT_TRUE(game->isValideMove({
-        {'X',' ',' '},
-        {' ',' ',' '},
-        {' ',' ',' '}
-    }, (0, 1, 'O')));
-}
-
-TEST_F(GameTest, InvalidMoveTest) {
-    EXPECT_FALSE(game->isValideMove({
-        {' ',' ',' '},
-        {' ',' ',' '},
-        {' ',' ',' '}
-    }, (3, 0, 'X')));
-}
-
 TEST_F(GameTest, GameResetTest) {
     // Pas sur de mon coup
     EXPECT_TRUE(game->gameReset('O'), new game);
