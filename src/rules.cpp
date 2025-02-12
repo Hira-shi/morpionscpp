@@ -1,7 +1,6 @@
 #include "../include/rules.h"
 #include "../include/board.h"
 
-
 bool checkWin (std::vector<std::vector<char>> win, char C) {
     for (int i = 0; i < 3; i++) {
         if (win[i][0] == C && win[i][1] == C && win[i][2] == C) {
@@ -31,7 +30,22 @@ bool checkDraw (std::vector<std::vector<char>> win) {
     Board board = setBoard(win);
     if (checkWin(win) == false && board.isBoardFull()) {
         return true;
-    }else {
-        return false;
+    }
+    return false;
+}
+
+bool isValidMove(std::vector<std::vector<char>> win, int row, int col) {
+    if (win[row][col] == ' ') {
+        return true;
+    }
+    return false;
+}
+
+char nextPlayer(char C) {
+    if (C == 'X') {
+        return 'O';
+    }
+    if (C == 'O') {
+        return 'X';
     }
 }
