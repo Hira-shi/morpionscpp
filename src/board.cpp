@@ -43,13 +43,26 @@ bool Board::isBoardFull() {
     for(int i=0;i<3;i++) {
         for(int j=0;j<3;j++) {
             if (board[i][j] == ' ') {
-                return true;
+                return false;
             }
         }
     }
-    return false;
+    return true;
 }
 
 void Board::resetBoard() {
     *this = Board();
+}
+
+ostream& operator<<(ostream& os, Board board) {
+    for(int i=0;i<3;i++) {
+        for(int j=0;j<3;j++) {
+            os << board.getCell(i, j);
+            if (j != 3-1) {
+                os << "|";
+            }
+        }
+        os << "______" <<endl;
+    }
+    return os;
 }

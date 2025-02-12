@@ -22,7 +22,7 @@ public:
 
     //Fonction board
     ~Board();
-    ostream& printBoard(ostream& os);
+    friend ostream& printBoard(ostream& os, Board board);
 };
 #endif //BOARD_H
 

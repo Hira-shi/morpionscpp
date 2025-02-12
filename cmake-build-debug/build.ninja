@@ -61,8 +61,8 @@ build CMakeFiles/Morpions.dir/src/board.cpp.obj: CXX_COMPILER__Morpions_unscanne
   OBJECT_DIR = CMakeFiles\Morpions.dir
   OBJECT_FILE_DIR = CMakeFiles\Morpions.dir\src
 
-build CMakeFiles/Morpions.dir/src/rule.cpp.obj: CXX_COMPILER__Morpions_unscanned_Debug C$:/dev/cpp/Morpions/src/rule.cpp || cmake_object_order_depends_target_Morpions
-  DEP_FILE = CMakeFiles\Morpions.dir\src\rule.cpp.obj.d
+build CMakeFiles/Morpions.dir/src/rules.cpp.obj: CXX_COMPILER__Morpions_unscanned_Debug C$:/dev/cpp/Morpions/src/rules.cpp || cmake_object_order_depends_target_Morpions
+  DEP_FILE = CMakeFiles\Morpions.dir\src\rules.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Morpions.dir
   OBJECT_FILE_DIR = CMakeFiles\Morpions.dir\src
@@ -87,7 +87,7 @@ build CMakeFiles/Morpions.dir/src/player.cpp.obj: CXX_COMPILER__Morpions_unscann
 #############################################
 # Link the executable Morpions.exe
 
-build Morpions.exe: CXX_EXECUTABLE_LINKER__Morpions_Debug CMakeFiles/Morpions.dir/src/main.cpp.obj CMakeFiles/Morpions.dir/src/board.cpp.obj CMakeFiles/Morpions.dir/src/rule.cpp.obj CMakeFiles/Morpions.dir/src/game.cpp.obj CMakeFiles/Morpions.dir/src/player.cpp.obj
+build Morpions.exe: CXX_EXECUTABLE_LINKER__Morpions_Debug CMakeFiles/Morpions.dir/src/main.cpp.obj CMakeFiles/Morpions.dir/src/board.cpp.obj CMakeFiles/Morpions.dir/src/rules.cpp.obj CMakeFiles/Morpions.dir/src/game.cpp.obj CMakeFiles/Morpions.dir/src/player.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Morpions.dir
