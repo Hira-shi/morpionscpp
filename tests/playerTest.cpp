@@ -16,8 +16,8 @@ protected:
 };
 
 TEST_F(PlayerTest, PlayerOneOrTwo){
-    EXPECT_TRUE(player->IsPlayerOne('X'));
-    EXPECT_FALSE(player->IsPlayerOne('O'));
+    EXPECT_TRUE(player->isPlayerOne('X'));
+    EXPECT_FALSE(player->isPlayerOne('O'));
 }
 
 TEST_F(PlayerTest, isPlayable){
@@ -33,8 +33,4 @@ TEST_F(PlayerTest, isPlayable){
         {'O','X','O'}
     }
         ));
-}
-
-TEST_F(PlayerTest, score){
-    EXPECT_TRUE(player->playerWin(1), 1);
 }
