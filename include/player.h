@@ -1,6 +1,8 @@
 #ifndef PLAYER_H
 #define PLAYER_H
+
 #include <vector>
+#include "board.h"
 
 class Player {
 private:

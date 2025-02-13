@@ -10,6 +10,7 @@ private:
     vector<vector<char>> board;
 public:
     Board();
+    Board(vector<vector<char>> board_) : board(board_){}
     vector<vector<char>> getBoard();
     void setBoard(vector<vector<char>> board);
 

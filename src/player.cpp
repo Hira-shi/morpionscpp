@@ -1,5 +1,6 @@
 #include "../include/player.h"
-#include "../include/board.h"
+#include "../include/game.h"
+#include "../include/rules.h"
 
 
 bool Player::isPlayerOne(char C) {
@@ -9,10 +10,14 @@ bool Player::isPlayerOne(char C) {
 
 Board setBoard(const vector<std::vector<char>>& heu);
 
+bool checkwin(const Board& heu);
+
 bool isPlayable(std::vector<std::vector<char>> HEU) {
     Board board = setBoard(HEU);
     if (!board.isBoardFull()) {
-        return true;
+        if (!checkwin(HEU)) {
+            return true;
+        }
     }
     return false;
 }

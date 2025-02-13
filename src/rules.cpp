@@ -1,7 +1,7 @@
 #include "../include/rules.h"
-#include "../include/board.h"
 
-bool checkWin (std::vector<std::vector<char>> win, char C) {
+bool checkWin (Board board, char C) {
+    std::vector<std::vector<char>> win = board.getBoard();
     for (int i = 0; i < 3; i++) {
         if (win[i][0] == C && win[i][1] == C && win[i][2] == C) {
             return true;
@@ -18,15 +18,15 @@ bool checkWin (std::vector<std::vector<char>> win, char C) {
     }
 }
 
-bool checkWin (std::vector<std::vector<char>> win) {
+bool checkWin (const std::vector<std::vector<char>>&win) {
     checkWin(win, 'X');
     checkWin(win, 'O');
 }
 
 
-Board setBoard(const vector<std::vector<char>>& win);
+Board setBoard(const Board& win);
 
-bool checkDraw (std::vector<std::vector<char>> win) {
+bool checkDraw (const std::vector<std::vector<char>>&win) {
     Board board = setBoard(win);
     if (checkWin(win) == false && board.isBoardFull()) {
         return true;
@@ -34,7 +34,8 @@ bool checkDraw (std::vector<std::vector<char>> win) {
     return false;
 }
 
-bool isValidMove(std::vector<std::vector<char>> win, int row, int col) {
+bool isValidMove(Board board, int row, int col) {
+    std::vector<std::vector<char>> win = board.getBoard();
     if (win[row][col] == ' ') {
         return true;
     }
