@@ -1,6 +1,0 @@
-2:PlayerTest.isPlayable
-12:RulesTest.DrawTest
-13:RulesTest.ValidMoveTest
-18:BoardTest.PlaceSymbolOutOfBounds
-21:BoardTest.ResetBoard
-23:BoardTest.ValidSymbols

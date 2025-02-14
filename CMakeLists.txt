@@ -1,31 +1,17 @@
 cmake_minimum_required(VERSION 3.14)
-project(Morpions LANGUAGES CXX)
+project(Morpions VERSION 1.0 LANGUAGES CXX)
 
+# Définit le standard C++ à utiliser
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include(FetchContent)
-FetchContent_Declare(
-    googletest
-    GIT_REPOSITORY https://github.com/google/googletest.git
-    GIT_TAG release-1.12.1
-)
-FetchContent_MakeAvailable(googletest)
-
-add_library(MorpionsLib
-    src/board.cpp
-    src/rules.cpp
-    src/game.cpp
-)
-
-target_include_directories(MorpionsLib PUBLIC include)
-
+# Création de l'exécutable
 add_executable(Morpions
-    src/main.cpp
+        src/main.cpp
+        src/board.cpp
+        src/game.cpp
+        src/rules.cpp
 )
 
-target_link_libraries(Morpions PRIVATE MorpionsLib)
-
-
-enable_testing()
-add_subdirectory(tests)
+# Ajoute le dossier include pour les headers
+target_include_directories(Morpions PRIVATE include)

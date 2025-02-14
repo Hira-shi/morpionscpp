@@ -1,30 +1,27 @@
 #include "../include/board.h"
+#include <iostream>
 
 Board createBoard() {
-    Board board;
-    for (int i = 0; i < 3 ; ++i) {
-        for (int j = 0; j < 3 ; ++j) {
-            board[i][j] = 'w';
-        }
-    }
+    Board board(3, std::vector<char>(3, 'w'));  // Initialisation correcte
     return board;
 }
 
-void placePiece(Board board, char C, int row, int col) {
+void placePiece(Board& board, char C, int row, int col) {
     board[row][col] = C;
 }
+
 
 void displayBoard(Board board) {
     for (int i = 0; i < 3 ; ++i) {
         for (int j = 0; j < 3 ; ++j) {
             std::cout << board[i][j];
             if (j != 2) {
-                std::cout << ' | ';
+                std::cout << " | ";
             }
         }
-        std::cout << '\n';
+        std::cout << "\n";
         if (i != 2) {
-            std::cout << '----------\n';
+            std::cout << "----------\n";
         }
     }
 }
@@ -49,6 +46,8 @@ int rowCount(int n) {
             return 2;
         case 9:
             return 2;
+        default:
+            return 3;
     }
 }
 
@@ -72,6 +71,8 @@ int colCount(int n) {
             return 1;
         case 9:
             return 2;
+        default:
+            return 3;
     }
 }
 

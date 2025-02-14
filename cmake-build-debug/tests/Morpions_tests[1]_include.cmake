@@ -1,5 +1,0 @@
-if(EXISTS "C:/dev/cpp/Morpions/cmake-build-debug/tests/Morpions_tests[1]_tests.cmake")
-  include("C:/dev/cpp/Morpions/cmake-build-debug/tests/Morpions_tests[1]_tests.cmake")
-else()
-  add_test(Morpions_tests_NOT_BUILT Morpions_tests_NOT_BUILT)
-endif()

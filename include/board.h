@@ -1,15 +1,14 @@
 #ifndef BOARD_H
 #define BOARD_H
 
+#include "rules.h"
 #include <vector>
-#include <iostream>
-using namespace std;
 
-using Board = vector<vector<char>>;
+using Board = std::vector<std::vector<char>>;
 
-Board createBoard(Board board);
-void placePiece(Board board, char C, int row, int col);
-void displayBoard(Board board);
+Board createBoard();
+void placePiece(Board& board, char C, int row, int col);  // Ajout de référence
+void displayBoard(const Board& board);  // Ajout de const
 int rowCount(int n);
 int colCount(int n);
 

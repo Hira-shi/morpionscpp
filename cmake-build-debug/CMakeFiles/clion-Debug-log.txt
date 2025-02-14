@@ -1,6 +1,0 @@
-C:\Users\carre\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/carre/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\dev\cpp\Morpions -B C:\dev\cpp\Morpions\cmake-build-debug
-CMake Error at CMakeLists.txt:32 (add_subdirectory):
-  add_subdirectory given source "tests" which is not an existing directory.
-
-
--- Configuring incomplete, errors occurred!
