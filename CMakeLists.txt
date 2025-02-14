@@ -16,7 +16,6 @@ add_library(MorpionsLib
     src/board.cpp
     src/rules.cpp
     src/game.cpp
-    src/player.cpp
 )
 
 target_include_directories(MorpionsLib PUBLIC include)
