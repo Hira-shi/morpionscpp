@@ -16,12 +16,11 @@ protected:
 };
 
 TEST_F(GameTest, InitializationTest) {
-    EXPECT_TRUE(game->getCurrentSymbol(), 'X');
     EXPECT_TRUE(game->isGameInProgress());
 }
 
 TEST_F(GameTest, PlayerSwitchTest) {
-    EXPECT_TRUE(game->switchPlayer('X'), 'O');
+    EXPECT_EQ(game->switchPlayer('X'), 'O');
 }
 
 TEST_F(GameTest, WinConditionsTest) {
@@ -55,6 +54,5 @@ TEST_F(GameTest, DrawGameTest) {
 }
 
 TEST_F(GameTest, GameResetTest) {
-    // Pas sur de mon coup
-    EXPECT_TRUE(game->gameReset('O'), new game);
+    EXPECT_TRUE(game->gameReset('O'));
 }

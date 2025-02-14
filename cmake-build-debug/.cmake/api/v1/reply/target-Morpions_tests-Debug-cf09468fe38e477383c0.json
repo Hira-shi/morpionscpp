@@ -14,8 +14,7 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries",
-			"target_include_directories"
+			"target_link_libraries"
 		],
 		"files" : 
 		[
@@ -57,12 +56,6 @@
 				"file" : 2,
 				"line" : 145,
 				"parent" : 5
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 16,
-				"parent" : 0
 			}
 		]
 	},
@@ -78,19 +71,23 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
-					"isSystem" : true,
-					"path" : "C:/dev/cpp/Morpions/cmake-build-debug/_deps/googletest-src/googletest/include"
+					"backtrace" : 2,
+					"path" : "C:/dev/cpp/Morpions/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "C:/dev/cpp/Morpions/cmake-build-debug/_deps/googletest-src/googlemock/include"
+					"path" : "C:/dev/cpp/Morpions/cmake-build-debug/_deps/googletest-src/googletest/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "C:/dev/cpp/Morpions/cmake-build-debug/_deps/googletest-src/googletest"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/dev/cpp/Morpions/cmake-build-debug/_deps/googletest-src/googlemock/include"
 				},
 				{
 					"backtrace" : 2,
@@ -120,7 +117,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "gmock::@0f7bb11d64f3678238c7"
+			"id" : "MorpionsLib::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
@@ -128,11 +125,15 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"id" : "gmock::@0f7bb11d64f3678238c7"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
 	"id" : "Morpions_tests::@a44f0ac069e85531cdee",
@@ -147,6 +148,11 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libMorpionsLib.a",
+				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,

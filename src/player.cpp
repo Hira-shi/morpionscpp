@@ -10,14 +10,7 @@ bool Player::isPlayerOne(char C) {
 
 Board setBoard(const vector<std::vector<char>>& heu);
 
-bool checkwin(const Board& heu);
 
-bool isPlayable(std::vector<std::vector<char>> HEU) {
-    Board board = setBoard(HEU);
-    if (!board.isBoardFull()) {
-        if (!checkwin(HEU)) {
-            return true;
-        }
-    }
-    return false;
+bool Player::isPlayable(std::vector<std::vector<char>> HEU) {
+    return !Rules::checkWin(HEU);
 }

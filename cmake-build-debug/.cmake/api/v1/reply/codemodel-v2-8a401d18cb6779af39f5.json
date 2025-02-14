@@ -21,7 +21,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				},
 				{
@@ -47,7 +48,7 @@
 						3
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-b1e2b5c7e18718b09e37.json",
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-64a9e219b2f9e727c4e2.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -57,14 +58,14 @@
 					"source" : "cmake-build-debug/_deps/googletest-src/googlemock",
 					"targetIndexes" : 
 					[
-						2,
-						3
+						3,
+						4
 					]
 				},
 				{
 					"build" : "_deps/googletest-build/googletest",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-0d92233741a83e4ece0c.json",
+					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-6e5a0b0986043c4b2d00.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -74,8 +75,8 @@
 					"source" : "cmake-build-debug/_deps/googletest-src/googletest",
 					"targetIndexes" : 
 					[
-						4,
-						5
+						5,
+						6
 					]
 				},
 				{
@@ -90,7 +91,7 @@
 					"source" : "tests",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				}
 			],
@@ -111,7 +112,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				},
 				{
@@ -139,8 +141,8 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						2,
-						3
+						3,
+						4
 					]
 				},
 				{
@@ -152,8 +154,8 @@
 					"parentIndex" : 2,
 					"targetIndexes" : 
 					[
-						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -162,14 +164,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Morpions::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Morpions-Debug-7b0ecb5077c7862d6f56.json",
+					"jsonFile" : "target-Morpions-Debug-92d67f15511a4bde020a.json",
 					"name" : "Morpions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MorpionsLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MorpionsLib-Debug-54aefd08edd4080c3eee.json",
+					"name" : "MorpionsLib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "Morpions_tests::@a44f0ac069e85531cdee",
-					"jsonFile" : "target-Morpions_tests-Debug-db0fdfa38489bc487d17.json",
+					"jsonFile" : "target-Morpions_tests-Debug-cf09468fe38e477383c0.json",
 					"name" : "Morpions_tests",
 					"projectIndex" : 0
 				},

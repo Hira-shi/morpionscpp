@@ -12,7 +12,8 @@ public:
     Board();
     Board(vector<vector<char>> board_) : board(board_){}
     vector<vector<char>> getBoard();
-    void setBoard(vector<vector<char>> board);
+    void setBoard(const vector<vector<char>> &board);
+    bool checkWin() const;
 
     //Test
     bool placeSymbol(int row, int col, char symbol);
@@ -22,7 +23,7 @@ public:
     void resetBoard();
 
     //Fonction board
-    ~Board();
+    ~Board() = default;
     friend ostream& printBoard(ostream& os, Board board);
 };
 #endif //BOARD_H

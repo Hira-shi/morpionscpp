@@ -9,8 +9,8 @@ private:
     char p1 = 'X';
     char p2 = 'O';
 public:
-    Player();
-    ~Player();
+    Player() = default;
+    ~Player() = default;
 
     bool isPlayerOne(char C);
     bool isPlayable(std::vector<std::vector<char>> board);

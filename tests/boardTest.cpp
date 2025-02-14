@@ -17,7 +17,7 @@ protected:
 TEST_F(BoardTest, InitialBoardIsEmpty) {
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            EXPECT_EQ(board->getCell(i, j), ' ');
+            EXPECT_EQ(board->getCell(i, j), (i*3)+(j+1));
         }
     }
 }

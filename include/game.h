@@ -9,8 +9,8 @@ class Game {
 private:
     char currentSymbol;
 public:
-    Game();
-    ~Game();
+    Game() = default;
+    ~Game() = default;
 
     char getCurrentSymbol();
     bool isGameInProgress();
