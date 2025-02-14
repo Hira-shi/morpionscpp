@@ -1,0 +1,3 @@
+C:\Users\carre\scoop\apps\cmake\3.31.4\bin\cmake.exe -E rm -f CMakeFiles\Morpions.dir/objects.a
+C:\Users\carre\scoop\apps\mingw\current\bin\ar.exe qc CMakeFiles\Morpions.dir/objects.a @CMakeFiles\Morpions.dir\objects1.rsp
+C:\Users\carre\scoop\apps\mingw\current\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Morpions.dir/objects.a -Wl,--no-whole-archive -o Morpions.exe -Wl,--out-implib,libMorpions.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Morpions.dir\linkLibs.rsp

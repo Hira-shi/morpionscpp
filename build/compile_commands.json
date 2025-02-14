@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/dev/cpp/Morpions/build",
+  "command": "C:\\Users\\carre\\scoop\\apps\\mingw\\current\\bin\\g++.exe  @CMakeFiles/Morpions.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\Morpions.dir\\src\\main.cpp.obj -c C:\\dev\\cpp\\Morpions\\src\\main.cpp",
+  "file": "C:/dev/cpp/Morpions/src/main.cpp",
+  "output": "CMakeFiles/Morpions.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/dev/cpp/Morpions/build",
+  "command": "C:\\Users\\carre\\scoop\\apps\\mingw\\current\\bin\\g++.exe  @CMakeFiles/Morpions.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\Morpions.dir\\src\\board.cpp.obj -c C:\\dev\\cpp\\Morpions\\src\\board.cpp",
+  "file": "C:/dev/cpp/Morpions/src/board.cpp",
+  "output": "CMakeFiles/Morpions.dir/src/board.cpp.obj"
+},
+{
+  "directory": "C:/dev/cpp/Morpions/build",
+  "command": "C:\\Users\\carre\\scoop\\apps\\mingw\\current\\bin\\g++.exe  @CMakeFiles/Morpions.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\Morpions.dir\\src\\game.cpp.obj -c C:\\dev\\cpp\\Morpions\\src\\game.cpp",
+  "file": "C:/dev/cpp/Morpions/src/game.cpp",
+  "output": "CMakeFiles/Morpions.dir/src/game.cpp.obj"
+},
+{
+  "directory": "C:/dev/cpp/Morpions/build",
+  "command": "C:\\Users\\carre\\scoop\\apps\\mingw\\current\\bin\\g++.exe  @CMakeFiles/Morpions.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\Morpions.dir\\src\\rules.cpp.obj -c C:\\dev\\cpp\\Morpions\\src\\rules.cpp",
+  "file": "C:/dev/cpp/Morpions/src/rules.cpp",
+  "output": "CMakeFiles/Morpions.dir/src/rules.cpp.obj"
+}
+]
