@@ -2,18 +2,22 @@
 #define RULE_H
 
 #include <vector>
+#include "board.h"
 
 class Rules {
 private:
 
 public:
-    Rules();
-    ~Rules();
+    Rules() = default;
+    ~Rules() = default;
 
+    static void setBoard(const Board& board);
+    static bool checkwin(const Board& board);
+    static bool checkwin(const std::vector<std::vector<char>>& board);
     // Fonction test
-    bool checkWin(std::vector<std::vector<char>> win);
-    bool checkDraw(std::vector<std::vector<char>> draw);
-    bool isValidMove(std::vector<std::vector<char>> HEU, int row, int col);
+    static bool checkWin(const std::vector<std::vector<char>>& win);
+    bool checkDraw(const std::vector<std::vector<char>> &draw);
+    bool isValidMove(Board HEU, int row, int col);
     char nextPlayer(char C);
 };
 

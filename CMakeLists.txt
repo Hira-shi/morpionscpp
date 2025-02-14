@@ -12,17 +12,21 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
+add_library(MorpionsLib
+    src/board.cpp
+    src/rules.cpp
+    src/game.cpp
+    src/player.cpp
+)
+
+target_include_directories(MorpionsLib PUBLIC include)
+
 add_executable(Morpions
     src/main.cpp
-        include/board.h
-        src/board.cpp
-        src/rules.cpp
-        src/game.cpp
-        src/player.cpp
-        include/game.h
-        include/player.h
-        include/rules.h
 )
+
+target_link_libraries(Morpions PRIVATE MorpionsLib)
+
 
 enable_testing()
 add_subdirectory(tests)

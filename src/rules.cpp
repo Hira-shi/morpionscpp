@@ -1,7 +1,8 @@
 #include "../include/rules.h"
-#include "../include/board.h"
 
-bool checkWin (std::vector<std::vector<char>> win, char C) {
+Board setBoard(const std::vector<std::vector<char>>& win);
+
+bool checkLaWin (std::vector<std::vector<char>> win, char C) {
     for (int i = 0; i < 3; i++) {
         if (win[i][0] == C && win[i][1] == C && win[i][2] == C) {
             return true;
@@ -18,34 +19,43 @@ bool checkWin (std::vector<std::vector<char>> win, char C) {
     }
 }
 
-bool checkWin (std::vector<std::vector<char>> win) {
-    checkWin(win, 'X');
-    checkWin(win, 'O');
+bool Rules::checkWin (const std::vector<std::vector<char>>&win) {
+    if (checkLaWin(win, 'X'))
+        return true;
+    if (checkLaWin(win, 'O'))
+        return true;
+    return false;
 }
 
+Board setBoard(const std::vector<std::vector<char>>& win) {
+    return Board(win);
+}
 
-Board setBoard(const vector<std::vector<char>>& win);
-
-bool checkDraw (std::vector<std::vector<char>> win) {
-    Board board = setBoard(win);
+bool Rules::checkDraw (const std::vector<std::vector<char>>&win) {
+    Board board = Board(win);
     if (checkWin(win) == false && board.isBoardFull()) {
         return true;
     }
     return false;
 }
 
-bool isValidMove(std::vector<std::vector<char>> win, int row, int col) {
+bool Rules::isValidMove(Board board, int row, int col) {
+    std::vector<std::vector<char>> win = board.getBoard();
     if (win[row][col] == ' ') {
         return true;
+    }
+    if (row < 0 || row >= 3 || col < 0 || col >= 3) {
+        return false;
     }
     return false;
 }
 
-char nextPlayer(char C) {
+char Rules::nextPlayer(char C) {
     if (C == 'X') {
         return 'O';
-    }
-    if (C == 'O') {
+    }else if (C == 'O') {
         return 'X';
+    } else {
+        return C;
     }
 }
