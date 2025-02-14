@@ -1,31 +1,30 @@
-PlayerTest.PlayerOneOrTwo 1 0.0088814
+PlayerTest.PlayerOneOrTwo 2 0.00591235
 PlayerTest.isPlayable 0 0
-GameTest.InitializationTest 0 0
-GameTest.PlayerSwitchTest 1 0.0110455
-GameTest.WinConditionsTest 1 0.0122928
-GameTest.DrawGameTest 1 0.0123093
-GameTest.GameResetTest 1 0.0145145
-RulesTest.VerticalWinTest 1 0.0134219
-RulesTest.HorizontalWinTest 1 0.0136361
-RulesTest.DiagonalWinTest 1 0.0124539
-RulesTest.NoWinTest 1 0.0130922
-RulesTest.DrawTest 1 0.0121264
+GameTest.InitializationTest 1 0.0106628
+GameTest.PlayerSwitchTest 2 0.0056288
+GameTest.WinConditionsTest 2 0.00485515
+GameTest.DrawGameTest 2 0.00535005
+GameTest.GameResetTest 2 0.0066072
+RulesTest.VerticalWinTest 2 0.00616535
+RulesTest.HorizontalWinTest 2 0.006803
+RulesTest.DiagonalWinTest 2 0.0050705
+RulesTest.NoWinTest 2 0.0042589
+RulesTest.DrawTest 1 0
 RulesTest.ValidMoveTest 0 0
-RulesTest.PlayerSwitchTest 1 0.0116019
-BoardTest.InitialBoardIsEmpty 1 0.0105334
-BoardTest.PlaceSymbol 1 0.0112633
-BoardTest.PlaceSymbolOnOccupiedCell 1 0.0120141
+RulesTest.PlayerSwitchTest 2 0.00408485
+BoardTest.InitialBoardIsEmpty 2 0.0050143
+BoardTest.PlaceSymbol 2 0.0050549
+BoardTest.PlaceSymbolOnOccupiedCell 2 0.00469055
 BoardTest.PlaceSymbolOutOfBounds 0 0
-BoardTest.IsCellEmpty 1 0.0112646
-BoardTest.IsBoardFull 0 0
+BoardTest.IsCellEmpty 2 0.0044958
+BoardTest.IsBoardFull 1 0.0107932
 BoardTest.ResetBoard 0 0
-BoardTest.GameSequence 1 0.0116006
+BoardTest.GameSequence 2 0.0058894
 BoardTest.ValidSymbols 0 0
 ---
 PlayerTest.isPlayable
-GameTest.InitializationTest
+RulesTest.DrawTest
 RulesTest.ValidMoveTest
 BoardTest.PlaceSymbolOutOfBounds
-BoardTest.IsBoardFull
 BoardTest.ResetBoard
 BoardTest.ValidSymbols
